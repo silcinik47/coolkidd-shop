@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coolkidd Store | Магазин смартфонов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="container">
+            <div class="logo">COOLKIDD STORE</div>
+            <nav>
+                <ul>
+                    <li><a href="#products">Все товары</a></li>
+                    <li><a href="#deals">Акции</a></li>
+                    <li><a href="#brands">Бренды</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero dark-bg">
+        <div class="container">
+            <h1>ЛУЧШИЕ СМАРТФОНЫ 2024</h1>
+            <p>Только оригинальная техника с гарантией</p>
+            <a href="#products" class="cool-btn">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+            <div class="products-grid" id="products-grid"></div>
+        </div>
+    </section>
+
+    <section id="deals" class="deals-section dark-bg">
+        <div class="container">
+            <div class="deals-header">
+                <h2>ГОРЯЧИЕ АКЦИИ</h2>
+                <div class="deal-timer">
+                    До конца акции: 
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+            <div class="products-grid" id="deals-grid"></div>
+        </div>
+    </section>
+
+    <section id="brands" class="brands-section">
+        <div class="container">
+            <h2>ПОПУЛЯРНЫЕ БРЕНДЫ</h2>
+            <div class="brands-grid">
+                <a href="#okak" class="brand-card">OKAK</a>
+                <a href="#sumsung" class="brand-card">SUMSUNG</a>
+                <a href="#xiaomi" class="brand-card">XIAOMI</a>
+                <a href="#poco" class="brand-card">POCO</a>
+                <a href="#realme" class="brand-card">REALME</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Брендовые разделы -->
+    <section id="okak" class="brand-section dark-bg">
+        <div class="container">
+            <h2>OKAK</h2>
+            <div class="products-grid" id="okak-grid"></div>
+        </div>
+    </section>
+
+    <section id="sumsung" class="brand-section">
+        <div class="container">
+            <h2>SUMSUNG</h2>
+            <div class="products-grid" id="sumsung-grid"></div>
+        </div>
+    </section>
+
+    <section id="xiaomi" class="brand-section dark-bg">
+        <div class="container">
+            <h2>XIAOMI</h2>
+            <div class="products-grid" id="xiaomi-grid"></div>
+        </div>
+    </section>
+
+    <section id="poco" class="brand-section">
+        <div class="container">
+            <h2>POCO</h2>
+            <div class="products-grid" id="poco-grid"></div>
+        </div>
+    </section>
+
+    <section id="realme" class="brand-section dark-bg">
+        <div class="container">
+            <h2>REALME</h2>
+            <div class="products-grid" id="realme-grid"></div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+        <div class="container">
+            <h2>КОНТАКТЫ</h2>
+            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Адрес: Москва, ул. Техническая, 42</p>
+        </div>
+    </section>
+
+    <footer class="dark-footer">
+        <div class="container">
+            <p>© 2024 coolkidd Store. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Ваша корзина</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-footer">
+                <div class="total-price">Итого: $0</div>
+                <button class="cool-btn checkout-btn">КУПИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подробностей товара -->
+    <div class="product-details-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="" class="modal-product-img">
+                <div class="modal-text">
+                    <h3 class="modal-product-name"></h3>
+                    <p class="modal-product-desc"></p>
+                    <div class="modal-prices">
+                        <span class="modal-current-price"></span>
+                        <span class="modal-old-price"></span>
+                    </div>
+                    <button class="cool-btn modal-add-to-cart">ДОБАВИТЬ В КОРЗИНУ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Уведомление -->
+    <div class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
